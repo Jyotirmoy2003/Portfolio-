@@ -395,6 +395,11 @@ article div p{
   border-color: rgb(163, 163, 163);
 }
 
+.unavailable-text {
+  text-decoration: line-through;
+}
+
+
 /* CONTACT */
 
 #contact {
