@@ -221,6 +221,7 @@ section {
   gap: 1rem;
 }
 
+
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
@@ -304,6 +305,8 @@ section {
   text-align: center;
   width: 50%;
   flex-wrap: wrap;
+
+  
 }
 
 .section-container {
@@ -388,6 +391,13 @@ article div p{
 .project-title {
   margin: 1rem;
   color: black;
+  /* Limit text to 2 lines, prevent uneven card height */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  min-height: 120px;
+ 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-btn {
@@ -398,6 +408,14 @@ article div p{
 .unavailable-text {
   text-decoration: line-through;
 }
+
+.disabled {
+  pointer-events: none; /* prevents clicking */
+  opacity: 0.4;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
 
 
 /* CONTACT */
