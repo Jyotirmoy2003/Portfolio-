@@ -48,7 +48,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/My/Jyotirmoy.pdf')"
+            onclick="window.open('./assets/My/JyotirmoyCV.pdf', '_blank')"
           >
             Download CV
           </button>
@@ -61,13 +61,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/jyotirmoy-mondal-0aab2b222/'"
+            onclick="location.href='https://www.linkedin.com/in/jyotirmoy-mondal-0aab2b222/', '_blank'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/Jyotirmoy2003'"
+            onclick="location.href='https://github.com/Jyotirmoy2003' , '_blank'  "
           />
         </div>
       </div>
@@ -131,9 +131,10 @@
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
+
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container">
+          <div class="details-container-exp">
             <h2 class="experience-sub-title">Programming</h2>
             <div class="article-container">
               <article>
@@ -173,7 +174,7 @@
             </div>
           </div>
           <!-- Container 2 -->
-          <div class="details-container">
+          <div class="details-container-exp">
             <h2 class="experience-sub-title">Tool</h2>
             <div class="article-container">
               <article>
@@ -237,11 +238,21 @@
             </div>
           </div>
 
-          
+          <!-- Container 3 -->
+          <div class="details-container-exp">
+            <h2 class="experience-sub-title">ELDC</h2>
+            <div class="article-container">
+            <p >At ELDC, I worked as a Game Developer using both Unity and Unreal Engine, primarily creating VR training and simulation experiences. I handled projects independently as well as in collaboration with another developer. My responsibilities included developing VR multiplayer simulations integrated with AI-driven chat interactions, enabling realistic and adaptive communication experiences within the virtual environment.
+I collaborated closely with the 3D team for asset integration, optimized performance, and deployed final builds. Additionally, I worked on browser-based simulation modules depending on client requirements.</p>
+
+              
+            </div>
+          </div>
           
           
         </div>
       </div>
+      
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -256,7 +267,7 @@
 
 
 
-
+    
     <!-- Project -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -403,6 +414,23 @@
     <section id="projects">
       <p class="section__text__p1">Workplace Projects</p>
       <h1 class="title">ELDC</h1>
+      <!-- Medvr and ELDC Toggle -->
+      <!--<div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('','_blank')"
+            >
+              <span>Medvr</span>
+            </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://medvr.education/solution/lower-extremity-pulses/', '_blank')"
+              >
+                Immerse Learn
+              </button>
+      </div> -->
+
+
 
       <div class="experience-details-container">
         <div class="about-containers">
@@ -549,7 +577,7 @@
               Meta
             </button>
               <button
-              class="btn btn-color-2 project-btn"
+              class="btn btn-color-2 project-btn disabled"
               onclick="window.open('', '_blank')"
               >
                 <span class="unavailable-text">Live Demo</span>
@@ -569,7 +597,7 @@
             <h2 class="experience-sub-title project-title">Abdominal Assessment</h2>
             <div class="btn-container">
               <button
-              class="btn btn-color-2 project-btn"
+              class="btn btn-color-2 project-btn disabled"
               onclick="window.open('','_blank')"
             >
               <span class="unavailable-text">Meta</span>
@@ -595,7 +623,7 @@
             <h2 class="experience-sub-title project-title">Nasal Airways</h2>
             <div class="btn-container">
               <button
-              class="btn btn-color-2 project-btn"
+              class="btn btn-color-2 project-btn disabled"
               onclick="window.open('','_blank')"
             >
               <span class="unavailable-text">Meta</span>
@@ -603,6 +631,84 @@
               <button
               class="btn btn-color-2 project-btn"
               onclick="window.open('https://medvr.education/solution/nasal-airways-insertion/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Apical Pulse Project -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/My/ELDC/Apical-Thumb.jpg"
+                alt="Apical Pulse Assessment"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Apical Pulse Assessment</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn disabled"
+              onclick="window.open('','_blank')"
+            >
+              <span class="unavailable-text">Meta</span>
+            </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://medvr.education/solution/apical-pulse/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+           <!-- Radial Pulse Project -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/My/ELDC/Radial-thumb.jpg"
+                alt="Radial Pulse"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Radial Pulse</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn disabled"
+              onclick="window.open('','_blank')"
+            >
+              <span class="unavailable-text">Meta</span>
+            </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://medvr.education/solution/radial-pulse/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Radial Pulse Project -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/My/ELDC/lower_Thumb.jpg"
+                alt="Lower Extremity Pulses"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Lower Extremity Pulses</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn disabled"
+              onclick="window.open('','_blank')"
+            >
+              <span class="unavailable-text">Meta</span>
+            </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('https://medvr.education/solution/lower-extremity-pulses/', '_blank')"
               >
                 Live Demo
               </button>
